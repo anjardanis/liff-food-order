@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Food Order - Anjar Daniswara</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <section class="container content-section">
+                <img class="logo-item-image" src="img/Monarch.png">
+                <span class="logo-item-title">Monarch Jakarta </span>
+            </section>
+            <section class="container content-section">
+                <div>
+                    <p id="displayNameField2" style="font-weight: bold;">Customer</p>
+                    <p>Selamat Datang di Applikasi Food order Monarch Jakarta.Silahkan Pilih Menu dibawah.</p>
+                </div>
+                        <!-- JIKA BLM LOGIN -->
+        <div id="statusMessage container" style="font-weight: bold;">
+            <p id="isNotLogin">Silahkan Login Terlebih Dahulu untuk mengakses applikasi.</p>
+        </div>
+            </section>
+
+            <div class="buttonGroup container">
+                <button id="liffLoginButton">Log in</button>
+                <button id="liffLogoutButton">Log out</button>
+            </div>
+        
+        <div id="liffAppContent">
+            <!-- ACTION BUTTONS -->
+            <div class="buttonGroup container">
+                <div class="buttonRow">
+                    <button id="openWindowButton">Open External Window</button>
+                    <button id="closeWindowButton">Close LIFF App</button>
+                </div>
+                <div class="buttonRow">
+                    <button id="getProfileButton">Get Profile</button>
+                </div>
+            </div>
+
+                        <!-- PROFILE INFO -->
+                        <div id="profileInfo" class="container textLeft">
+                            <h2>Profile</h2>
+                            <a href="#" onclick="toggleProfileData()">Close Profile</a>
+                            <div id="profilePictureDiv">
+                            </div>
+                            <table>
+                                <tr>
+                                    <th>userId</th>
+                                    <td id="userIdProfileField"></td>
+                                </tr>
+                                <tr>
+                                    <th>displayName</th>
+                                    <td id="displayNameField"></td>
+                                </tr>
+                                <tr>
+                                    <th>statusMessage</th>
+                                    <td id="statusMessageField"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+            <section class="container content-section">
+                <h2 class="section-header">Food</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Brulee Bomb</span>
+                        <img class="shop-item-image" src="img/bruleebomb.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">Rp15000</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Shilin</span>
+                        <img class="shop-item-image" src="img/shilin.jpg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">Rp10000</span>
+                            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container content-section">
+                <h2 class="section-header">Drink</h2>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Green Tea</span>
+                        <img class="shop-item-image" src="img/greentea.jpg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">Rp9000</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Chocolate</span>
+                        <img class="shop-item-image" src="img/coklat.jpg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">Rp7500</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                      <span class="shop-item-title">Coffe Chocolate</span>
+                      <img class="shop-item-image" src="img/coffecoklat.jpg">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">Rp10000</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <span class="shop-item-title">Red Velvet</span>
+                      <img class="shop-item-image" src="img/redvelvet.jpg">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">Rp11000</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <span class="shop-item-title">Taro</span>
+                      <img class="shop-item-image" src="img/taro.jpg">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">Rp8000</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <span class="shop-item-title">Thai Tea</span>
+                      <img class="shop-item-image" src="img/thaitea.jpg">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">Rp6500</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                    </div>
+                    <div class="shop-item">
+                      <span class="shop-item-title">Vanilla</span>
+                      <img class="shop-item-image" src="img/vanilla.jpg">
+                      <div class="shop-item-details">
+                          <span class="shop-item-price">Rp7500</span>
+                          <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                      </div>
+                     </div>
+                </div>
+        
+            </section>
+            <section class="container content-section">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">Rp0</span>
+                </div>
+                <button id="purchaseButton" class="btn btn-primary btn-purchase" type="button">PURCHASE</button>         
+            </section>
+            <!-- LIFF DATA -->
+            <div id="liffData" class="container">
+                <h2>LIFF Data</h2>
+                <table>
+                    <tr>
+                        <th>OS</th>
+                        <td id="deviceOS" class="textLeft"></td>
+                    </tr>
+                    <tr>
+                        <th>Language</th>
+                        <td id="browserLanguage" class="textLeft"></td>
+                    </tr>
+                    <tr>
+                        <th>LINE Version</th>
+                        <td id="lineVersion" class="textLeft"></td>
+                </table>
+            </div>
+            <!-- LOGIN LOGOUT BUTTONS -->
+            <div id="statusMessage container">
+                <div id="isInClientMessage" class="container"></div>
+                <div id="apiReferenceMessage" class="container hidden">
+                    <p>Food Orders Apps Monarch Jakarta adalah untuk memesan melalui LINE Front-end Framework (LIFF)</p>
+                </div>
+            </div>
+        </div>
+
+        </body> 
+        <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+        <script src="liff-starter.js"></script>   
+</html>
